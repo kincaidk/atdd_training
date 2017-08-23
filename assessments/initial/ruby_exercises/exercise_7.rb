@@ -17,5 +17,43 @@ contracts_4 = %w(Active Active Active Restricted Inactive Restricted Inactive )
 
 #Method goes here
 
+def verifyOrder(string)
+  arr = string.split(" ")
+  chars = ['A', 'R', 'I']
+  for i in (0...arr.length) do
+    while st[0] == 'A'
+      if not arr[i].include?('A')
+        return false
+      end
+      arr[i].delete_at(0)
+    end
+
+    while arr[i][0] == 'R'
+      if not arr[i].include?('R')
+        return false
+      end
+      arr[i].delete_at(0)
+    end
+    chars.delete('A')
+
+    while arr[i][0] == 'I'
+      if not arr[i].include?('I')
+        return false
+      end
+      arr[i].delete_at(0)
+    end
+    chars.delete('R')
+  end
+  return true
+end
 
 # method call goes here
+for i in [contracts_1, contracts_2, contracts_3, contracts_4] do
+  puts verifyOrder(i)
+end
+
+#tests
+puts verfiyOrder(contracts_1) == true
+puts verfiyOrder(contracts_2) == false
+puts verfiyOrder(contracts_3) == true
+puts verfiyOrder(contracts_4) == false

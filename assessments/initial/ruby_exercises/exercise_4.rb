@@ -6,4 +6,17 @@
 
 test_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+sq = []
+no = []
 
+for i in test_array do
+  if Math.sqrt(i) % 1 == 0
+    sq.push(i)
+  else
+    no.push(i)
+  end
+end
+
+#tests
+puts sq == [1,4,9]
+puts no == [2,3,5,6,7,8,10]
