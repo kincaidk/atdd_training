@@ -6,7 +6,7 @@ This lab is designed to familiarize yourself with Watir and Page Object.
 
   - search for a flight from Denver, Colorado to Columbus, Ohio for 
 a departure date of 10/10 and a return date of 10/18. 
-Validate that flight 777s travel time is 2hr 40m
+Validate that flight 777's travel time is 2hr 40m
 
 - search for a flight from LAX to SFO (using the Airport codes)
 Validate the flights listed are for Los Angeles, CA to San Francisco, CA

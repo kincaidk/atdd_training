@@ -1,5 +1,23 @@
 class Calculator
-	def add(num1, num2)
-		num1 + num2
+	def add(*nums)
+		nums.reduce(:+)
+	end
+
+
+	def subtract(*nums)
+		nums.reduce(:-)
+	end
+
+
+	def multiply(*nums)
+		nums.reduce(:*)
+	end
+
+
+	def divide(*nums)
+		nums.reduce(:/)
+
+		# if nums.include?(0), raises ZeroDivisionError
+
 	end
 end

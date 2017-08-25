@@ -11,10 +11,16 @@ Feature: Addition
     When I add zero to a number
     Then the sum is that number
 
-  Scenario: Adding numbers in different orders
-    When I add the same numbers in different orders
+  Scenario: The commutative property DOES apply to addition between numbers
+    When I add numbers in different orders
     Then the sums are the same
 
   Scenario: Adding more than two numbers
     When I add more than two numbers
     Then I get the sum
+
+
+
+
+
+

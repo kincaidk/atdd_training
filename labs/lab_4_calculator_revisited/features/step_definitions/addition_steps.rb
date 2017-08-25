@@ -16,7 +16,7 @@ Then /^the sum is that number$/ do
   expect(@sum).to eq 6
 end
 
-When /^I add the same numbers in different orders$/ do
+When /^I add numbers in different orders$/ do
   calc = Calculator.new
   @sum1 = calc.add 6, 23
   @sum2 = calc.add 23, 6
